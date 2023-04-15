@@ -1,5 +1,5 @@
 bucket                      = "web-terraform-states"
-key                         = "ci-cd-example.tfstate"
+key                         = "tf-states"
 region                      = "us-west-1"
 encrypt                     = true
-dynamodb_table              = "terraform-locks"
+dynamodb_table              = "web-terraform-locks"
