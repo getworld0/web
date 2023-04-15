@@ -26,7 +26,9 @@ jobs:
           cd terraform/registry/
           terraform init \
           -backend-config=config/backend-config.tf \
-          -reconfigure 
+          -reconfigure \
+          -input=false
+          -force-copy
           
           terraform apply \
           -var-file=vars.tfvars
