@@ -33,7 +33,7 @@
 	}
 }
 
-.background-container{
+.backgroundContainer{
 	position: fixed;
 	top: 0;
 	left:0;
@@ -70,12 +70,47 @@
   animation:move-background 70s linear infinite;
 }
 
-.introTextDiv {
-	position: relative;
-	margin-top: 450px;
-	margin-left: 200px;
-	width: 500px;
-	color: white;
-	font-size: 40px;
-	z-index: 2;
+// Common mobile phones in portrait mode.
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+	.introTextDiv {
+		position: relative;
+		margin-top:50vh;
+		margin-left:5vw;
+		width: 70vw;
+		font-size: 1.7em;
+		color: white;
+		z-index: 2;
+		border: 1px solid green;
+	}
 }
+
+// Common mobile phones in landscape mode.
+@media screen and (max-device-width: 600px) and (orientation:landscape) {
+	.introTextDiv {
+		position: relative;
+		border: 1px solid red;
+		// margin-top:50vh;
+		// margin-left:5vw;
+		// width: 70vw;
+		font-size: 1.7em;
+		color: white;
+		z-index: 2;
+	}
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+}
+
+
+// @media screen and (min-width: 480px) {
+// 	.introTextDiv {
+// 		position: relative;
+// 		border: 1px solid red;
+// 		margin-top: 450px;
+// 		margin-left: 200px;
+// 		width: 500px;
+// 		color: white;
+// 		font-size: 40px;
+// 		z-index: 2;
+// 	}
+// }

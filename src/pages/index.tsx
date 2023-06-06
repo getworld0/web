@@ -1,9 +1,13 @@
 import React from 'react'
 import styles from '@/styles/Home.module.scss'
+import Head from 'next/head'
 
 export default function Home () {
   return (
-    <div className={styles['background-container']}>
+    <div className={styles.backgroundContainer}>
+      <Head>
+        <title>World0</title>
+      </Head>
       <div className={styles.stars}></div>
       <div className={styles.twinkling}></div>
       <div className={styles.introTextDiv}>
