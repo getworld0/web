@@ -11,7 +11,7 @@
     "overrides": [
     ],
     "parserOptions": {
-        "project": "web/tsconfig.json",
+        "project": "./tsconfig.json",
         "ecmaVersion": "latest",
         "sourceType": "module"
     },
