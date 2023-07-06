@@ -1,3 +1,4 @@
+// Animated stars background
 @keyframes move-background {
   from {
 		-webkit-transform: translate3d(0px, 0px, 0px);
@@ -80,37 +81,44 @@
 		font-size: 1.7em;
 		color: white;
 		z-index: 2;
-		border: 1px solid green;
 	}
 }
 
 // Common mobile phones in landscape mode.
-@media screen and (max-device-width: 600px) and (orientation:landscape) {
+@media screen and (max-device-width: 850px) and (orientation:landscape) {
 	.introTextDiv {
 		position: relative;
-		border: 1px solid red;
-		// margin-top:50vh;
-		// margin-left:5vw;
-		// width: 70vw;
+		margin-top:50vh;
+		margin-left:5vw;
+		width: 70vw;
 		font-size: 1.7em;
 		color: white;
 		z-index: 2;
 	}
 }
 
-@media screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+// Common tablet
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+  .introTextDiv {
+		position: relative;
+		margin-top:50vh;
+		margin-left:5vw;
+		width: 70vw;
+		font-size: 2em;
+		color: white;
+		z-index: 2;
+	}
 }
 
-
-// @media screen and (min-width: 480px) {
-// 	.introTextDiv {
-// 		position: relative;
-// 		border: 1px solid red;
-// 		margin-top: 450px;
-// 		margin-left: 200px;
-// 		width: 500px;
-// 		color: white;
-// 		font-size: 40px;
-// 		z-index: 2;
-// 	}
-// }
+// Common web
+@media screen and (min-width:1000px) {
+	.introTextDiv {
+		position: relative;
+		margin-top: 50vh;
+		margin-left: 18vw;
+		width: 40vw;
+		color: white;
+		font-size: 2.3em;
+		z-index: 2;
+	}
+}
