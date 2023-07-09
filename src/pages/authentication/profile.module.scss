@@ -1,0 +1,38 @@
+.profileInfoContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 0.3em;
+    height: 48vh;
+    width: 39.5vw; 
+    top: 20%;
+    left: 33%;
+
+    z-index: 2;
+}
+
+.profileInfoHeader {
+    color: white;
+
+}
+
+.introText {
+    color: white;
+    margin-top: 20vh;
+}
+
+.profileInfoTable {
+    color: white;
+    border: 1px solid white;
+    padding: 3px;
+
+    tr {
+        border: 1px solid white;
+    }
+    td {
+        padding: 10px;
+    }
+}

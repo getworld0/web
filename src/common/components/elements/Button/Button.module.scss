@@ -1,0 +1,17 @@
+.button {
+    padding: 0.6vh 1vw 0.6vh 1vw;
+    font-size: 1em;
+    border: 0.1vw solid white;
+    border-radius: 0.3em;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-underline-offset: 0.5vh;
+
+    // Animates an underline on hover.
+    text-decoration: underline 0.07em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 400ms;
+    &:hover {
+        text-decoration-color: rgba(255, 255, 255, 1);
+    }
+}
