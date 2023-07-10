@@ -1,20 +1,21 @@
-import React from 'react'
+import { NavBar } from '@/common/components/navBar/NavBar'
 import styles from '@/styles/Home.module.scss'
 import Head from 'next/head'
 
+import { StarBackground } from '@/common/components/elements/starBackground/StarBackground'
+
 export default function Home () {
   return (
-    <div className={styles.backgroundContainer}>
+    <StarBackground>
       <Head>
         <title>World0</title>
       </Head>
-      <div className={styles.stars}></div>
-      <div className={styles.twinkling}></div>
+      <NavBar />
       <div className={styles.introTextDiv}>
-        <span className={styles.introText}>
+        <span>
           Developing enduring solutions to environmental issues through software.
         </span>
       </div>
-    </div>
+  </StarBackground>
   )
 }
