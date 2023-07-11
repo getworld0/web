@@ -5,5 +5,5 @@ interface ButtonProps {
 }
 
 export function Button ({ text }: ButtonProps) {
-  return <button className={styles.button}>{text}</button>
+  return <button className={styles.btn}>{text}</button>
 }

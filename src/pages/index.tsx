@@ -11,7 +11,7 @@ export default function Home () {
         <title>World0</title>
       </Head>
       <NavBar />
-      <div className={styles.introTextDiv}>
+      <div className={styles.headerContainer}>
         <span>
           Developing enduring solutions to environmental issues through software.
         </span>

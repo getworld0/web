@@ -6,7 +6,7 @@ import { Button } from '@/common/components/elements/button/Button'
 export function NavBar () {
   return (
       <div className={styles.navBar}>
-        <Link className={styles.logInLink} href="/">
+        <Link className={styles.navBar_logInLink} href="/">
           Log in
         </Link>
 

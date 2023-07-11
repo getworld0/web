@@ -6,9 +6,9 @@ interface StarBackgroundProps {
 
 export function StarBackground ({ children }: StarBackgroundProps) {
   return (
-    <div className={styles.backgroundContainer}>
-      <div className={styles.stars}></div>
-      <div className={styles.twinkling}></div>
+    <div className={styles.background}>
+      <div className={styles.background_stars}></div>
+      <div className={styles.background_twinkling}></div>
       {children}
     </div>
   )
