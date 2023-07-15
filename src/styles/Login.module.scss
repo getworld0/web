@@ -1,0 +1,67 @@
+.loginAreaContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+
+  &_formContainer {
+    position: absolute;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 0.3em;
+    height: 48vh;
+    width: 23vw; 
+    top: 10vh;
+    z-index: 2;
+  }
+}
+
+.verticalLine {
+  position: absolute;
+  border-left: 1px solid white;
+  height: 70vh;
+  top: 14vh;
+  left: 50%;
+  z-index: 2;
+}
+
+  .marketingTextContainer {
+    position:absolute;
+    left: 55%;
+    top: 14vh;
+    z-index: 2;
+    color: white;
+
+    &_bodyTextContainer {
+      position: absolute;
+      height: 30vh;
+      line-height: 2;
+    }
+
+    &_spinningGlobeGif {
+      position: absolute;
+      left: 10vw;
+    }
+    
+  }
+
+  // .h3 {
+  //   border: 1px solid white;
+  //   line-height: 4;
+  // }
+
+// ---- RESPONSIVE STYLING---- //
+
+// Common mobile phones in portrait mode.
+@media screen and (max-device-width: 480px) and (orientation:portrait) {
+}
+
+// Common mobile phones in landscape mode.
+@media screen and (max-device-width: 850px) and (orientation:landscape) {
+}
+
+// Common tablet
+@media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+}
+

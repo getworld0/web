@@ -7,19 +7,19 @@
   padding-right: 3vw;
   display: flex;
   justify-content: right;
-}
 
-.navBar_logInLink {
-  color: white;
-  margin-right: 2vw;
-  align-self: center;
-  cursor: pointer;
-  text-underline-offset: 0.5vh;
-
-  // Animates an underline on hover.
-  text-decoration: underline 0.07em rgba(0, 0, 0, 0);
-  transition: text-decoration-color 400ms;
-  &:hover {
-      text-decoration-color: rgba(255, 255, 255, 1);
+  &_logInLink {
+    color: white;
+    margin-right: 2vw;
+    align-self: center;
+    cursor: pointer;
+    text-underline-offset: 0.5vh;
+  
+    // Animates an underline on hover.
+    text-decoration: underline 0.07em rgba(0, 0, 0, 0);
+    transition: text-decoration-color 400ms;
+    &:hover {
+        text-decoration-color: rgba(255, 255, 255, 1);
+    }
   }
 }
