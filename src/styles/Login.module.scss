@@ -7,13 +7,20 @@
 
   &_formContainer {
     position: absolute;
-    display: flex;
     border: 1px solid white;
     border-radius: 0.3em;
     height: 48vh;
     width: 23vw; 
     top: 10vh;
     z-index: 2;
+    h2 {
+      width: 100%;
+      text-align: center;
+    }
+    input {
+      margin: auto;
+      width: 90%;
+    }
   }
 }
 
@@ -31,12 +38,13 @@
     left: 55%;
     top: 14vh;
     z-index: 2;
-    color: white;
 
     &_bodyTextContainer {
       position: absolute;
-      height: 30vh;
       line-height: 2;
+      h3:nth-child(2) {
+        margin-top: 15vh;
+      }
     }
 
     &_spinningGlobeGif {
@@ -45,11 +53,6 @@
     }
     
   }
-
-  // .h3 {
-  //   border: 1px solid white;
-  //   line-height: 4;
-  // }
 
 // ---- RESPONSIVE STYLING---- //
 
