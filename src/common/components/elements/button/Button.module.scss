@@ -15,3 +15,9 @@
       text-decoration-color: rgba(255, 255, 255, 1);
   }
 }
+
+@media screen and (max-device-width: 480px) {
+  .btn {
+    padding: 1vh 2vw 1vh 2vw;
+  }
+}

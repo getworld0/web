@@ -1,26 +1,81 @@
-.loginAreaContainer {
+.loginContainer {
   width: 50%;
   height: 100%;
   display: flex;
   position: absolute;
   justify-content: center;
+}
 
-  &_formContainer {
-    position: absolute;
-    border: 1px solid white;
-    border-radius: 0.3em;
-    height: 48vh;
-    width: 23vw; 
-    top: 10vh;
-    z-index: 2;
-    h2 {
-      width: 100%;
-      text-align: center;
-    }
-    input {
+.loginFormContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  border-radius: 0.3em;
+  align-items: center;
+
+  height: 48vh;
+  width: 23vw; 
+  top: 10vh;
+  z-index: 2;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    line-height: 2rem;
+
+    label, button {
       margin: auto;
-      width: 90%;
+      width: 80%;
+      padding-left: 0;
+      padding-right: 0;
     }
+
+    button {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.textInput {
+  border:1px solid #1f1f1f;
+  border-radius: 1%;
+  margin: auto;
+  width: 80%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  background-color: #0a0a0a;
+  color: white;
+}
+
+.checkBoxContainer {
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.rememberMeCheckbox {
+  border-radius: 100%;
+  margin-left: 0;
+}
+
+.horizontalLine {
+  margin-top: 20px;
+  border-top: 1px solid white;
+  width: 70%;
+  margin: auto;
+}
+
+.forgotPassword {
+  width: 80%;
+  margin: auto;
+
+  button {
+    padding-left: 0;
   }
 }
 
@@ -33,38 +88,59 @@
   z-index: 2;
 }
 
-  .marketingTextContainer {
-    position:absolute;
-    left: 55%;
-    top: 14vh;
-    z-index: 2;
+.marketingTextContainer {
+  position:absolute;
+  left: 55%;
+  top: 14vh;
+  z-index: 2;
+}
 
-    &_bodyTextContainer {
-      position: absolute;
-      line-height: 2;
-      h3:nth-child(2) {
-        margin-top: 15vh;
-      }
-    }
-
-    &_spinningGlobeGif {
-      position: absolute;
-      left: 10vw;
-    }
-    
+.marketingTextBody {
+  position: absolute;
+  line-height: 2;
+  h3:nth-child(2) {
+    margin-top: 15vh;
   }
+}
+
+.spinningGlobeGif {
+  position: absolute;
+  left: 10vw;
+}
 
 // ---- RESPONSIVE STYLING---- //
 
+@media screen and (max-device-width: 850px) {
+  .verticalLine {
+    display: none;
+  }
+  .marketingTextContainer {
+    display: none;
+  }
+
+  .loginContainer {
+    width: 100%;
+  }
+}
 // Common mobile phones in portrait mode.
 @media screen and (max-device-width: 480px) and (orientation:portrait) {
+  .loginFormContainer {
+    width: 80vw;
+  }
 }
 
 // Common mobile phones in landscape mode.
 @media screen and (max-device-width: 850px) and (orientation:landscape) {
+  .loginFormContainer {
+    width: 40vw;
+    height: 70vh;
+  }
 }
 
 // Common tablet
 @media screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+    .loginFormContainer {
+      width: 50vw;
+    }
 }
 

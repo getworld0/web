@@ -8,17 +8,33 @@
   display: flex;
   justify-content: right;
 
-  &_logInLink {
-    margin-right: 2vw;
+  a {
     align-self: center;
-    cursor: pointer;
-    text-underline-offset: 0.5vh;
-    color: white;
-    // Animates an underline on hover.
-    text-decoration: underline 0.07em rgba(0, 0, 0, 0);
-    transition: text-decoration-color 400ms;
-    &:hover {
-        text-decoration-color: rgba(255, 255, 255, 1);
-    }
+    text-underline-offset: 2px;
+    text-decoration: none
+    
   }
+}
+
+.linkText {
+  color: white;
+  cursor: pointer;
+  text-underline-offset: 2px;
+  // Animates an underline on hover.
+  text-decoration: underline 1px rgba(0, 0, 0, 0);
+  transition: text-decoration-color 400ms;
+  &:hover {
+    text-decoration-color: rgba(255, 255, 255, 1);
+  }
+}
+
+.homeLink {
+  cursor:default;
+  flex-grow: 1;
+  text-align: left;
+  margin-left: 2em;
+}
+
+.loginLink {
+  margin-right: 2vw;
 }
