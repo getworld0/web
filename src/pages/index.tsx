@@ -2,6 +2,7 @@ import { NavBar } from '@/common/components/navBar/NavBar'
 import styles from '@/styles/Home.module.scss'
 import Head from 'next/head'
 
+// TODO(@EricHasegawa) Redo UI and move to tailwind
 import { StarBackground } from '@/common/components/elements/starBackground/StarBackground'
 
 export default function Home () {
